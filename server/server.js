@@ -30,9 +30,9 @@ app.post('/', async (req, res) => {
             model: "text-davinci-003",      // The model to use for completion
             prompt: `${prompt}`,        // The prompt to complete
             temperature: 0.7,     // The temperature for the model. 0.9 is a good value
-            max_tokens: 3000,       // The maximum number of tokens to generate
+            max_tokens: 4000,       // The maximum number of tokens to generate
             top_p: 1,       // The sampling top-p. 1 is the same as greedy sampling
-            frequency_penalty: 0.5,         // The frequency penalty for the model. 0.5 is a good value
+            frequency_penalty: 0,         // The frequency penalty for the model. 0.5 is a good value
             presence_penalty: 0,        // The presence penalty for the model. 0 is a good value
         });
 
