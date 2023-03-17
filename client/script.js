@@ -90,7 +90,8 @@ const handleSubmit = async (e) => {     // function to handle form submit
 
   //fetch data from server
 
-  const response = await fetch('https://codenexus.onrender.com', {     // fetch data from server
+  const response = await fetch('https://codenexus.onrender.com', 
+  {     // fetch data from server
     method: 'POST',     // set method to POST
     headers: {      // set headers
       'Content-Type': 'application/json'
