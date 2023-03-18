@@ -113,7 +113,7 @@ const handleSubmit = async (e) => {     // function to handle form submit
   } else {
     const err = await response.text();    // get error response
 
-    messageDiv.innerHTML = "Something went wrong!";
+    messageDiv.innerHTML = "Fuck! It seems that something went wrong!";
 
     alert(err);     // show error alert
   }

@@ -38,7 +38,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  padding-bottom: 20px;
+  /* padding-bottom: px; */
   scroll-behavior: smooth;
 }
 
@@ -64,7 +64,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
+  gap: 10px;;
 }
 
 .profile {
@@ -117,17 +117,38 @@ body {
   display: none;
 }
 
+.header{
+  width: 100%;
+  height: 60px;
+  background: #0E8388;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  
+}
+
+.headname{
+  font-size: 25px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
 form {
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
   background: #333333;
+  border-radius: 20px;
 
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-bottom: 20px ;
+  margin-bottom: 15px ;
+  margin-top: 15px;
 }
 
 textarea {
