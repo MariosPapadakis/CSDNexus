@@ -1,7 +1,7 @@
 import bot from './assets/bot.svg';   // import bot image
 import user from './assets/user.svg';     // import user image
 
-const form = document.querySelector('form');      // get form element
+const form = document.querySelector('form');      // get form element from html
 const chatContainer = document.querySelector('#chat_container');      // get chat container element
 
 let loadInterval;   // variable to store setInterval function for loader
@@ -36,7 +36,7 @@ function typeText(element, text)    // function to type text in element with 20m
     else{   // if index is equal to text length
       clearInterval(interval);    // clear interval to stop typing
     }
-  }, 20);     // set interval to 20ms
+  }, 18);     // set interval to 20ms
 }
 
 function generateUniqueId()     // function to generate unique id
@@ -79,12 +79,12 @@ const handleSubmit = async (e) => {     // function to handle form submit
   form.reset();     // reset form
 
   // bot chat stripe
-  const uniqueId = generateUniqueId();     // generate unique id for bot chat stripe
+  const uniqueId = generateUniqueId();     // generate unique id for bot chat stripe element
   chatContainer.innerHTML += chatStripe(true, " ", uniqueId);     // add bot chat stripe to chat container
 
   chatContainer.scrollTop = chatContainer.scrollHeight;     // scroll chat container to bottom
 
-  const messageDiv = document.getElementById(uniqueId);     // get bot chat stripe element
+  const messageDiv = document.getElementById(uniqueId);     // get bot chat stripe element by id
 
   loader(messageDiv);     // show loader in bot chat stripe
 
